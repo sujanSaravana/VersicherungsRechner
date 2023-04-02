@@ -1,11 +1,20 @@
 import React from "react";
+import "./App.css"
 
 const  Schadensrechner = () => {
     return(
         <div>
-            <h1>
-                John
-            </h1>
+            <header className="title">
+                <h1>
+                Schadensrechner
+                </h1>
+            </header>
+            <section>
+                <h2>
+                    
+                    <input></input>
+                </h2>
+            </section>
         </div>
     );
 }

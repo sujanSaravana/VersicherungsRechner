@@ -1,11 +1,14 @@
 import React from "react";
+import './App.css';
 
 const  Hausratsrechner = () => {
     return(
         <div>
-            <h1>
-                sidhgk
-            </h1>
+            <header className="title">
+                <h1>
+                
+                </h1>
+            </header>
         </div>
     );
 }

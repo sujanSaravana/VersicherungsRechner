@@ -1,4 +1,31 @@
 .nav{
-    background-color: #262a56;
+    background-color: #e3e4ef;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navname{
+    display: flex;
+    padding: 0;
+    margin: 10px;
+}
+
+.Schadensrechner{
+    margin: 10px;
     text-align: right;
+    
+}
+
+
+
+.title{
+    text-align: center;
+}
+
+.rightsection{
+    text-align: right;
+}
+
+section{
+    background-color:blueviolet;
 }
