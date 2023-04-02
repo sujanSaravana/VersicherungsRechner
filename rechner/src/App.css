@@ -1,31 +1,28 @@
-.nav{
-    background-color: #e3e4ef;
-    display: flex;
-    justify-content: space-between;
+.nav {
+    background-color:black;
+    overflow: hidden;
 }
 
-.navname{
-    display: flex;
+.navname h1:hover {
+    background-color:#262a56 ;
+}
+
+.navname {
+    color: aliceblue;
     padding: 0;
-    margin: 10px;
-}
-
-.Schadensrechner{
-    margin: 10px;
-    text-align: right;
-    
+    justify-content:flex-end;
+    display: flex;
 }
 
 
-
-.title{
-    text-align: center;
+.Hausratsrechner{
+    margin-left: 1cm;
+    margin-right: 1cm;
 }
 
-.rightsection{
-    text-align: right;
+
+
+Link {
+    color: aliceblue;
 }
 
-section{
-    background-color:blueviolet;
-}
