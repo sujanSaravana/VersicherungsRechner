@@ -23,6 +23,36 @@
 
 .title{
     text-align: center;
+    background-color: aqua;
 }
  
+.rechner {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.zusammenfassung{
+    margin: 0.5cm;
+    margin-left: 2.5cm;
+}
+
+.eingaben{
+    margin: 0.5cm;
+    margin-right: 2.5cm;
+}
+
+body{
+    background-color:#e1e2ef;
+}
+
+input{
+    border:#05204a;
+    
+}
+
+button{
+    background-color:#05204a;
+}
+  
 

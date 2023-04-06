@@ -7,10 +7,11 @@ function Schadensrechner() {
     const [Hausratswert, setHausratswert] = useState("");
     const [Versicherungssumme, setVersicherungssumme] = useState("")
     const [Schaden, setSchaden] = useState("");
+    const [Zusammenfassung, setZusammenfassung] = useState("");
 
     const submit = (event) => {
        // event.preventDefault();
-        alert(`${Hausratswert}`); // in zusammenfassung rein tun  
+        setZusammenfassung(Hausratswert/Versicherungssumme*Schaden)
     }
     
     const change = (event) => {
@@ -26,8 +27,9 @@ function Schadensrechner() {
     }
 
     return(
-        <div>
-            <h1 className="title">Schadensrechner</h1>
+    <div>
+        <h1 className="title">Schadensrechner</h1>
+        <div className="rechner">
             <div className="eingaben">
                 <div>
                     <form onSubmit={submit}>  
@@ -40,7 +42,7 @@ function Schadensrechner() {
                         <h2>Schaden</h2>
                         <input type="number" value={Schaden} onChange={change2} />
                         <br></br>
-                        <button type="submit">Enter</button>
+                        <button type="submit" >Enter</button>
                     </form>
                 </div>
             </div>
@@ -48,9 +50,11 @@ function Schadensrechner() {
                 <h2>Zusammenfassung</h2>
                 <p>Totales Wert von Haus : {Hausratswert}</p>
                 <p>Versicherte Summe vom Haus : {Versicherungssumme}</p>
-                <p>Schden : {Schaden}</p>
+                <p>Schaden : {Schaden}</p>
+                <p>Entschädigung</p>
             </div>
         </div>
+    </div>
     );
 }
 
