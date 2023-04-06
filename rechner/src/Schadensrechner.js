@@ -51,7 +51,8 @@ function Schadensrechner() {
                 <p>Totales Wert von Haus : {Hausratswert}</p>
                 <p>Versicherte Summe vom Haus : {Versicherungssumme}</p>
                 <p>Schaden : {Schaden}</p>
-                <p>Entschädigung</p>
+                <p className="result">Entschädigung :</p>
+                <p className="result">Selbstbehalt :</p>
             </div>
         </div>
     </div>

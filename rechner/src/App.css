@@ -4,7 +4,7 @@
 }
 
 .navname h1:hover {
-    background-color:rgb(107, 107, 235);
+    background-color:cadetblue;
     
 }
 
@@ -23,7 +23,6 @@
 
 .title{
     text-align: center;
-    background-color: aqua;
 }
  
 .rechner {
@@ -34,7 +33,11 @@
   
 .zusammenfassung{
     margin: 0.5cm;
-    margin-left: 2.5cm;
+    padding-left: 1cm;
+    padding-right: 2cm;
+    padding-top: 0.25cm;
+    border: 0.1cm solid;
+    border-radius: 0.25cm;
 }
 
 .eingaben{
@@ -42,17 +45,48 @@
     margin-right: 2.5cm;
 }
 
-body{
-    background-color:#e1e2ef;
+form{
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 0.25cm;
+    padding-bottom: 0.5cm;
+    border-radius: 0.25cm;
+    border: 0.1cm solid;
 }
 
 input{
-    border:#05204a;
-    
+    padding: 0.2cm;
+    border-radius: 0.25cm;
+    font-size: 0.5cm;
 }
 
 button{
     background-color:#05204a;
+    color: #e1e2ef;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0.7cm;
+    margin-left: 1.4cm;
+    border-radius: 0.25cm;
+    font-size:x-large;
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: cornflowerblue;
+}
+
+h2{
+    text-align: center;
+}
+
+.result{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    border: 0.05cm solid;
+    padding: 0.3cm;
 }
   
 
