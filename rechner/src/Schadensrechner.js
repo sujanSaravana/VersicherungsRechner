@@ -7,12 +7,10 @@ function Schadensrechner() {
     const [Hausratswert, setHausratswert] = useState("");
     const [Versicherungssumme, setVersicherungssumme] = useState("")
     const [Schaden, setSchaden] = useState("");
-    const [Zusammenfassung, setZusammenfassung] = useState("");
+    const [result, setResult] = useState("");
+    const [result1, setResult1] = useState("");
 
-    const submit = (event) => {
-       // event.preventDefault();
-        setZusammenfassung(Hausratswert/Versicherungssumme*Schaden)
-    }
+    
     
     const change = (event) => {
         setHausratswert(event.target.value);
@@ -26,13 +24,29 @@ function Schadensrechner() {
         setSchaden(event.target.value);
     }
 
+    const calculateEntschädigung = (event) => {
+        event.preventDefault();
+        setResult((Versicherungssumme * Hausratswert) / Schaden);
+    }
+
+    const calculateSchaden = () => {
+        const result2 = Schaden - result;
+        setResult1(Math.max(result2, 0));
+    }
+
+    const enterButton = () => {
+        calculateEntschädigung();
+        calculateSchaden();
+        
+    }
+
     return(
     <div>
         <h1 className="title">Schadensrechner</h1>
         <div className="rechner">
             <div className="eingaben">
                 <div>
-                    <form onSubmit={submit}>  
+                    <form>  
                         <h2>Hausratswert</h2>
                         <input type="number" value={Hausratswert} onChange={change} />
 
@@ -42,17 +56,17 @@ function Schadensrechner() {
                         <h2>Schaden</h2>
                         <input type="number" value={Schaden} onChange={change2} />
                         <br></br>
-                        <button type="submit" >Enter</button>
+                        <button onClick={enterButton} >Enter</button>
                     </form>
                 </div>
             </div>
             <div className="zusammenfassung">
                 <h2>Zusammenfassung</h2>
-                <p>Totales Wert von Haus : {Hausratswert}</p>
-                <p>Versicherte Summe vom Haus : {Versicherungssumme}</p>
-                <p>Schaden : {Schaden}</p>
-                <p className="result">Entschädigung :</p>
-                <p className="result">Selbstbehalt :</p>
+                <p>Totales Wert von Haus : {change}</p>
+                <p>Versicherte Summe vom Haus : {change1}</p>
+                <p>Schaden : {change2}</p>
+                <p className="result">Entschädigung : {result}</p>
+                <p className="result">Selbstbehalt : {result1}</p>
             </div>
         </div>
     </div>
