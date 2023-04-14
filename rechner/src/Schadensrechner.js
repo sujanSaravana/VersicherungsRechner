@@ -4,7 +4,7 @@ import './App.css';
 
 function Schadensrechner() {
 
-    const [Hausratswert, setHausratswert] = useState("");
+    const [Hauswert, setHauswert] = useState("");
     const [Versicherungssumme, setVersicherungssumme] = useState("")
     const [Schaden, setSchaden] = useState("");
     const [result, setResult] = useState("");
@@ -12,10 +12,17 @@ function Schadensrechner() {
     const [result2, setResult2] = useState("");
     const [error, setError] = useState("");
 
-    
+    function Clear(){
+        setHauswert("");
+        setVersicherungssumme("");
+        setSchaden("");
+        setResult("");
+        setResult1("");
+        setResult2("");
+    };
     
     const change = (event) => {
-        setHausratswert(event.target.value);
+        setHauswert(event.target.value);
     };
 
     const change1 = (event) => {
@@ -28,8 +35,8 @@ function Schadensrechner() {
 
     const enterButton = (event) => {
         event.preventDefault();
-        if(Schaden && Hausratswert && Versicherungssumme) {
-            const calculate = (Versicherungssumme / Hausratswert) * Schaden;
+        if(Schaden && Hauswert && Versicherungssumme) {
+            const calculate = (Versicherungssumme / Hauswert) * Schaden;
             setResult(parseInt(calculate).toFixed(2));
             setResult1(parseInt(Schaden - result).toFixed(2));
             setResult2(parseInt((result / Schaden) *100).toFixed(2) + "%");
@@ -44,10 +51,10 @@ function Schadensrechner() {
     <div>
         <h1 className="title">Schadensrechner</h1>
         <div className="rechner">
-            <div className="eingaben">
-                    <form onSubmit={enterButton}>  
-                        <h2>Hausratswert</h2>
-                        <input type="number" value={Hausratswert} onChange={change} />
+            <div>
+                    <form onSubmit={enterButton} className="eingaben">  
+                        <h2>Hauswert</h2>
+                        <input type="number" value={Hauswert} onChange={change} />
 
                         <h2>Versicherungssumme</h2>
                         <input type="number" value={Versicherungssumme} onChange={change1} />
@@ -56,11 +63,12 @@ function Schadensrechner() {
                         <input type="number" value={Schaden} onChange={change2}  />
                         <br></br>
                         <button type="submit" >Enter</button>
+                        <button type="submit" className="clearbtn" onClick={Clear}>Clear</button>
                     </form>
             </div>
             <div className="zusammenfassung">
                 <h2>Zusammenfassung</h2>
-                <p>Totales Wert von Haus : {Hausratswert}</p>
+                <p>Totales Wert von Haus : {Hauswert}</p>
                 <p>Versicherte Summe vom Haus : {Versicherungssumme}</p>
                 <p>Schaden : {Schaden}</p>
                 <p className="result">Entschädigung : {result}</p>

@@ -67,13 +67,16 @@ button{
     text-align: center;
     display: inline-block;
     margin-top: 0.7cm;
-    margin-left: 1.4cm;
+    margin-left: 0.2cm;
     border-radius: 0.25cm;
     font-size:x-large;
-    padding: 12px 40px;
+    padding: 12px 30px;
     cursor: pointer;
 }
 
+.clearbtn{
+    background-color: rgb(241, 3, 3);
+}
 button:hover{
     background-color: cornflowerblue;
 }
