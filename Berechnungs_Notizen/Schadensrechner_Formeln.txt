@@ -1,0 +1,7 @@
+Schadensrechner Formeln
+
+- Versicherungsumme/Hausratswert*Schaden=Summe(Entschädigung)
+
+- Schaden-Summe(Entschädigung)=Summe1(Selbstbehalt)
+
+-{Summe(Entschädigung)/Schaden}*100=Summe2(Prozentuale Absicherung)

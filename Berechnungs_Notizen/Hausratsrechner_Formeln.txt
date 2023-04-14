@@ -1,0 +1,4 @@
+Hausratsrechner Formeln
+
+- Quadratmeter*Basiswert=Summe(Hausratswert
+)

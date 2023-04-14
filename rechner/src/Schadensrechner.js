@@ -30,13 +30,15 @@ function Schadensrechner() {
         event.preventDefault();
         if(Schaden && Hausratswert && Versicherungssumme) {
             const calculate = (Versicherungssumme / Hausratswert) * Schaden;
-            setResult(calculate);
-            setResult1(Schaden - result);
-            setResult2((result / Schaden) *100);
+            setResult(parseInt(calculate).toFixed(2));
+            setResult1(parseInt(Schaden - result).toFixed(2));
+            setResult2(parseInt((result / Schaden) *100).toFixed(2) + "%");
         }else{
             setError("Error");
         }
     };
+
+    
 
     return(
     <div>
@@ -63,7 +65,9 @@ function Schadensrechner() {
                 <p>Schaden : {Schaden}</p>
                 <p className="result">Entschädigung : {result}</p>
                 <p className="result">Selbstbehalt : {result1}</p>
-                <p className="result">Prozentuale  : {result2}%</p>
+                <p className="result">Prozentuale  : {result2}</p>
+            </div>
+            <div className="error">
             </div>
         </div>
     </div>
