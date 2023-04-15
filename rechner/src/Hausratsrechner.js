@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import './App.css';
+import ClearBtn from "./components/ClearBtn";
 
 function  Hausratsrechner(){
-    
     
    const [Quadratmeter, setQuadratmeter] = useState("");
    const [Basiswert, setBasiswert] = useState("");
 
+
+   const clear = () => {
+        setQuadratmeter("");
+        setBasiswert("");
+   }
    
 
    
@@ -28,7 +33,7 @@ function  Hausratsrechner(){
                     <input type="number" value={Basiswert} />
                     <br></br>
                     <button>Enter</button>
-                    <button>Clear</button>
+                    <ClearBtn onClick={clear} />
                 </form>
             </div>
             <div>

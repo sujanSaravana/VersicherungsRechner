@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './App.css';
-import Clear from "./components/ClearBtn";
+import ClearBtn from "./components/ClearBtn";
 
 function Schadensrechner() {
 
@@ -13,6 +13,15 @@ function Schadensrechner() {
     const [result2, setResult2] = useState("");
     const [error, setError] = useState("");
 
+
+    const clear = () => {
+        setHauswert("");
+        setVersicherungssumme("");
+        setSchaden("");
+        setResult("");
+        setResult1("");
+        setResult2("");
+    }
 
     
     const change = (event) => {
@@ -57,7 +66,7 @@ function Schadensrechner() {
                         <input type="number" value={Schaden} onChange={change2}  />
                         <br></br>
                         <button type="submit" >Enter</button>
-                        <button type="submit" className="clearbtn" onClick={Clear}>Clear</button>
+                        <ClearBtn onClick={clear} />
                     </form>
             </div>
             <div className="zusammenfassung">
