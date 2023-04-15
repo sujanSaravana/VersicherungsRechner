@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 
 function  Hausratsrechner(){
     
-   const Basiswert = 200; 
+    
+   const [Quadratmeter, setQuadratmeter] = useState("");
+   const [Basiswert, setBasiswert] = useState("");
+
+   
 
    
     
@@ -19,14 +23,17 @@ function  Hausratsrechner(){
             <div>
                 <form className="eingaben">
                     <h2>Quadratmeter</h2>
-                    <input type="number" />
+                    <input type="number" value={Quadratmeter}/>
                     <h2>Basiswert</h2>
-                    <input type="number" />
+                    <input type="number" value={Basiswert} />
+                    <br></br>
+                    <button>Enter</button>
+                    <button>Clear</button>
                 </form>
             </div>
             <div>
                 <form>
-                    <h3>Vorgeschlagene Basiswert : {Basiswert}</h3>
+                    <h3>Vorgeschlagene Basiswert : 200</h3>
                 </form>
             </div>
             <div>
