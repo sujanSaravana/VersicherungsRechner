@@ -1,11 +1,6 @@
 .nav {
-    background-color:black;
+    background-color:#002300;
     overflow: hidden;
-}
-
-.navname h1:hover {
-    background-color:cadetblue;
-    
 }
 
 .navname {
@@ -15,6 +10,9 @@
     display: flex;
 }
 
+.background{
+    background: #c1ecd7;
+}
 
 .Hausratsrechner{
     margin-left: 1cm;
@@ -25,7 +23,7 @@
     text-align: center;
 }
  
-.rechner {
+.schadensrechner {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,13 +34,30 @@
     padding-left: 1.5cm;
     padding-right: 2cm;
     padding-top: 0.25cm;
-    border: 0.1cm solid;
+    border: 0.1cm ;
+    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
     border-radius: 0.5cm;
+    background: #Ffffff;
+    color: #002300;
 }
 
 .eingaben{
     margin: 0.5cm;
     margin-right: 2.5cm;
+    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
+    border: 0.1cm ;
+    background: #Ffffff;
+    color: #002300;
+}
+
+.nav-title{
+    color: #FCC201;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+}
+
+.nav-title:hover{
+    color: #fff3c9;
 }
 
 form{
@@ -51,17 +66,19 @@ form{
     padding-top: 0.25cm;
     padding-bottom: 0.5cm;
     border-radius: 0.25cm;
-    border: 0.1cm solid;
+    border: 0.1cm ;
 }
 
 input{
     padding: 0.2cm;
     border-radius: 0.25cm;
     font-size: 0.5cm;
+
 }
 
+
 button{
-    background-color:#05204a;
+    background-color:#002300;
     color: #e1e2ef;
     border: none;
     text-align: center;
@@ -72,18 +89,27 @@ button{
     font-size:x-large;
     padding: 12px 30px;
     cursor: pointer;
+    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
 }
 
 .clearbtn{
     background-color: rgb(241, 3, 3);
 }
-button:hover{
-    background-color: cornflowerblue;
+
+.clearbtn:hover{
+    background-color: rgba(254, 0, 0, 0.345);
 }
+
+
+button:hover{
+    background-color: #017201;
+}
+
 
 h2{
     text-align: center;
 }
+
 
 .result{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -91,5 +117,58 @@ h2{
     border: 0.05cm solid;
     padding: 0.3cm;
 }
+
+.hausratsrechner{
+
+}
+
+.Quadratmeter{
+    margin-left: 8.5cm;
+}
+
+.Basiswert{
+    margin-left: 8.5cm;
+}
+
+.btnHausratsrechner{
+    
+}
+
+.inputForm{
+    background: #Ffffff;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
+}
+
+.form1{
+    border: 0.07cm solid seagreen;
+    margin-top: 1cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    background: #ffffff;
+    
+}
+
+.resultForm{
+    margin-top: 1.5cm;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    margin-bottom: 2cm;
+    background: #Ffffff;
+    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
+}
+
+.btns-hausratsrechner{
+    margin-left: 8.5cm;
+    margin-bottom: 1cm;
+}
+
+.text{
+    text-align: center;
+}
+
 
 

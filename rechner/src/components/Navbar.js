@@ -5,17 +5,17 @@ import Hausratsrechner from "../Hausratsrechner";
 function Navbar(){
     return(
         <BrowserRouter>
-        <div>
+        <div className="background">
           <nav className="nav">
             <ul className='navname'>
               
                 <h1 className='Schadensrechner'>
-                  <Link to="/Schadensrechner">Schadensrechner</Link>
+                  <Link to="/Schadensrechner"><p className="nav-title">Schadensrechner</p></Link>
                 </h1>
               
               
                 <h1 className='Hausratsrechner'>
-                  <Link to="/Hausratsrechner">Hausratsrechner</Link>
+                  <Link to="/Hausratsrechner"><p className="nav-title">Hausratsrechner</p></Link>
                 </h1>
               
             </ul>

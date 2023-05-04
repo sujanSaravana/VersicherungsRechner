@@ -41,8 +41,8 @@ function Schadensrechner() {
         if(Schaden && Hauswert && Versicherungssumme) {
             const calculate = (Versicherungssumme / Hauswert) * Schaden;
             setResult(parseInt(calculate).toFixed(2));
-            setResult1(parseInt(Schaden - result).toFixed(2));
-            setResult2(parseInt((result / Schaden) *100).toFixed(2) + "%");
+            setResult1(parseInt(Schaden - calculate).toFixed(2));
+            setResult2(parseInt((calculate / Schaden) *100).toFixed(2) + "%");
         }else{
             setError("Error");
         }
@@ -51,9 +51,9 @@ function Schadensrechner() {
     
 
     return(
-    <div>
+    <div className="background">
         <h1 className="title">Schadensrechner</h1>
-        <div className="rechner">
+        <div className="schadensrechner">
             <div>
                     <form onSubmit={enterButton} className="eingaben">  
                         <h2>Hauswert</h2>
