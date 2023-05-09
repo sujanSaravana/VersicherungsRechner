@@ -21,6 +21,7 @@ function Schadensrechner() {
         setResult("");
         setResult1("");
         setResult2("");
+        setError("")
     }
 
     
@@ -43,18 +44,20 @@ function Schadensrechner() {
             setResult(parseInt(calculate).toFixed(2));
             setResult1(parseInt(Schaden - calculate).toFixed(2));
             setResult2(parseInt((calculate / Schaden) *100).toFixed(2) + "%");
+            setError("")
         }else{
-            setError("Error");
+           window.alert("Please fill in")
         }
     };
-
-    
+      
 
     return(
-    <div className="background">
-        <h1 className="title">Schadensrechner</h1>
-        <div className="schadensrechner">
-            <div>
+        <div>
+            <h1 className="title">
+                Schadensrechner
+            </h1>
+            <div className="schadensrechner">
+                <div>
                     <form onSubmit={enterButton} className="eingaben">  
                         <h2>Hauswert</h2>
                         <input type="number" value={Hauswert} onChange={change} />
@@ -68,20 +71,21 @@ function Schadensrechner() {
                         <button type="submit" >Enter</button>
                         <ClearBtn onClick={clear} />
                     </form>
-            </div>
-            <div className="zusammenfassung">
-                <h2>Zusammenfassung</h2>
-                <p>Totales Wert von Haus : {Hauswert}</p>
-                <p>Versicherte Summe vom Haus : {Versicherungssumme}</p>
-                <p>Schaden : {Schaden}</p>
-                <p className="result">Entschädigung : {result}</p>
-                <p className="result">Selbstbehalt : {result1}</p>
-                <p className="result">Prozentuale  : {result2}</p>
-            </div>
-            <div className="error">
+                </div>
+                <div className="zusammenfassung">
+                    <h2>Zusammenfassung</h2>
+                    <p>Totales Wert von Haus : {Hauswert}</p>
+                    <p>Versicherte Summe vom Haus : {Versicherungssumme}</p>
+                    <p>Schaden : {Schaden}</p>
+                    <p className="result">Entschädigung : {result}</p>
+                    <p className="result">Selbstbehalt : {result1}</p>
+                    <p className="result">Prozentuale <br></br> Absicherung : {result2}</p>
+                </div>
+                <div className="error">
+                    {error}
+                </div>
             </div>
         </div>
-    </div>
     );
 }
 
