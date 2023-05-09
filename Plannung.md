@@ -19,6 +19,9 @@
     - clear code ohne error alert
     - CSS nur "hintergrund"
 
+- Navbar 
+    - logo
+
 
 ## DONE
 
