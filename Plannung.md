@@ -1,25 +1,24 @@
 ## TO DO ()
 
 - Hausratsrechner
-    - CSS
-    - Rechnung (Quadratmeter*Basiswert)
-    - Buttons : Enter und Clear
     - clean code
-    - clear btn ohne error alert
+    - CSS nur "hintergrund"
+    - Hausratswert in Währung (CHF) ausgeben
     
 - Schadensrechner
-    - Error function
     - maximale Schaden (Wenn Schaden grösser als Hauswert sind, sollte der Schaden automatisch Hauswert nehmen)
     - clean code
-    - prozentuale zu "prozentuale Absicherung" ändern
-    - clear btn ohne error alert
 
 ## DOING 
 
+- Schadensrechner 
+    - Error function
+    - clear btn ohne error alert
+
 - Hausratsrechner
-    - forms
-    - title
-    - input fields
+    - clear code ohne error alert
+    - CSS nur "hintergrund"
+
 
 ## DONE
 
@@ -30,5 +29,14 @@
     - CSS
     - buttons : Enter und Clear
     - Entschädigung, Selbstbehalt und Prozentuale absicherung berechnen
+    - prozentuale zu "prozentuale Absicherung" ändern
+
+- Hausratsrechner
+    - forms
+    - title
+    - input fields
+    - CSS
+    - Rechnung (Quadratmeter*Basiswert)
+    - Buttons : Enter und Clear
     
 ## 
