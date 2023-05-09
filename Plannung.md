@@ -9,6 +9,10 @@
     - maximale Schaden (Wenn Schaden grösser als Hauswert sind, sollte der Schaden automatisch Hauswert nehmen)
     - clean code
 
+- Home 
+    - Erklärung : Hausratsrechner & Schadensrechner
+    - CSS (background)
+
 ## DOING 
 
 - Schadensrechner 
@@ -21,6 +25,10 @@
 
 - Navbar 
     - logo
+
+- Home 
+    - background
+    - button mit " jetzt berechnen "
 
 
 ## DONE

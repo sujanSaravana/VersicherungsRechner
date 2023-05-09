@@ -22,8 +22,13 @@
     margin-right: 1cm;
 }
 
+.Home{
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
 .logo{
-    margin-right: 18cm;
+    margin-right: 14cm;
 }
 
 .nav-title{
@@ -174,5 +179,25 @@ h2{
     text-align: center;
 }
 
+.homepart1{
+    background-image: url("https://c1.wallpaperflare.com/preview/553/386/425/fire-burning-house-flame.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    margin-top: -0.01cm;
+}
+
+.home-question{
+    color: #e1e2ef;
+}
+
+.home-question2{
+    color: #e1e2ef;
+}
+
+.home-btn{
+    height: 2.5cm;
+}
 
 

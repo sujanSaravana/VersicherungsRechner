@@ -1,6 +1,7 @@
 import {Link, BrowserRouter, Route, Routes} from "react-router-dom";
 import Schadensrechner from "../Schadensrechner";
 import Hausratsrechner from "../Hausratsrechner";
+import Home from "../Home";
 
 function Navbar(){
     return(
@@ -12,6 +13,10 @@ function Navbar(){
 
                 <h1 className="logo">
                   LOGO
+                </h1>
+
+                <h1 className='Home'>
+                  <Link to="/Home"><p className="nav-title">Home</p></Link>
                 </h1>
               
                 <h1 className='Schadensrechner'>
@@ -30,6 +35,7 @@ function Navbar(){
           <Routes>
             <Route path="/Schadensrechner" element={<Schadensrechner />} />
             <Route path="/Hausratsrechner" element={<Hausratsrechner />} />
+            <Route path="/Home" element={<Home />} />
           </Routes>
         </div>
       </BrowserRouter>
