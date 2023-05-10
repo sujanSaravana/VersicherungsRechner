@@ -8,12 +8,15 @@ function  Hausratsrechner(){
    const [Basiswert, setBasiswert] = useState("");
    const [Result, setResult] = useState("");
    const [error, setError] = useState("");
+   const [clearClick, setClearClick] = useState(false);
 
 
    const clear = () => {
         setQuadratmeter("");
         setBasiswert("");
         setResult("");
+        setError("");
+        setClearClick(true);
    }
 
    const change = (event) => {
@@ -24,16 +27,21 @@ function  Hausratsrechner(){
         setBasiswert(event.target.value)
     };
 
-   const enterButton = (event) => {
-    event.preventDefault();
-        if(Quadratmeter && Basiswert) {
-            const calculate = (Quadratmeter * Basiswert);
-            setResult(parseInt(calculate).toFixed(2));
-            setError("")
-        }else{
-            window.alert("Please fill in")
+    const enterButton = (event) => {
+        event.preventDefault();
+        if (clearClick) {
+            setClearClick(false);
+            return;
+        }if (Quadratmeter && Basiswert) {
+          const calculate = Quadratmeter * Basiswert;
+          setResult(parseInt(calculate).toFixed(2));
+          setError("");
+        } else {
+          setError("Please fill in");
+          window.alert("Please fill in");
         }
-   };
+      };
+      
    
 
    

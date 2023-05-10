@@ -12,6 +12,7 @@ function Schadensrechner() {
     const [result1, setResult1] = useState("");
     const [result2, setResult2] = useState("");
     const [error, setError] = useState("");
+    const [clearClick, setClearClick] = useState(false);
 
 
     const clear = () => {
@@ -22,6 +23,7 @@ function Schadensrechner() {
         setResult1("");
         setResult2("");
         setError("")
+        setClearClick(true);
     }
 
     
@@ -39,13 +41,17 @@ function Schadensrechner() {
 
     const enterButton = (event) => {
         event.preventDefault();
-        if(Schaden && Hauswert && Versicherungssumme) {
+        if (clearClick) {
+            setClearClick(false);
+            return;
+        }if(Schaden && Hauswert && Versicherungssumme) {
             const calculate = (Versicherungssumme / Hauswert) * Schaden;
             setResult(parseInt(calculate).toFixed(2));
             setResult1(parseInt(Schaden - calculate).toFixed(2));
             setResult2(parseInt((calculate / Schaden) *100).toFixed(2) + "%");
             setError("")
         }else{
+            setError("Please fill in")
            window.alert("Please fill in")
         }
     };
@@ -85,6 +91,10 @@ function Schadensrechner() {
                     {error}
                 </div>
             </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+
         </div>
     );
 }
