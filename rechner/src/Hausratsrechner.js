@@ -53,14 +53,14 @@ function  Hausratsrechner(){
                     Hausratsrechner
                 </h1>
             </header>
-            <body className="hausratsrechner">
+            <body className="background">
                 <div>
                     <form className="inputForm" onSubmit={enterButton}>
                         <h2>Quadratmeter</h2>
-                        <input type="number" value={Quadratmeter} onChange={change} className="Quadratmeter"/>
+                            <input type="number" value={Quadratmeter} onChange={change} className="Quadratmeter"/>                      
                         <h2>Basiswert</h2>
                         <input type="number" value={Basiswert} onChange={change1} className="Basiswert"/>
-                            <form className="form1">
+                            <form className="form-basiswert">
                                 <h3 className="text">Vorgeschlagene Basiswert : 200</h3>
                             </form>
                         <br></br>
@@ -72,11 +72,8 @@ function  Hausratsrechner(){
                 </div>
                 <div>
                     <form className="resultForm">
-                        <h3 className="text">Hausratswert : {Result} CHF</h3>
+                        <h3 className="result-hausratsrechner">Hausratswert : {Result} CHF</h3>
                     </form>
-                </div>
-                <div className="error">
-                    {error}
                 </div>
             </body>
         </div>

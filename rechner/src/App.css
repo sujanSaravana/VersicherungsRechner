@@ -1,77 +1,10 @@
-
-
-.nav {
-    background-color:#002300;
-    overflow: hidden;
-}
-
-
-.navname {
-    color: aliceblue;
-    padding: 0;
-    justify-content:flex-end;
-    display: flex;
-}
+/*  Everypage CSS
+*/
 
 .background{
     background: #c1ecd7;
+    height: 100vh;
 }
-
-.Hausratsrechner{
-    margin-left: 1cm;
-    margin-right: 1cm;
-}
-
-.Home{
-    margin-left: 1cm;
-    margin-right: 1cm;
-}
-
-.logo{
-    margin-right: 14cm;
-}
-
-.nav-title{
-    color: #FCC201;
-    margin-top: 0cm;
-    margin-bottom: -0.3cm;
-}
-
-.nav-title:hover{
-    color: #fff3c9;
-}
-
-.title{
-    text-align: center;
-}
- 
-.schadensrechner {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-.zusammenfassung{
-    margin: 0.5cm;
-    padding-left: 1.5cm;
-    padding-right: 2cm;
-    padding-top: 0.25cm;
-    border: 0.1cm ;
-    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
-    border-radius: 0.5cm;
-    background: #Ffffff;
-    color: #002300;
-}
-
-.eingaben{
-    margin: 0.5cm;
-    margin-right: 2.5cm;
-    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
-    border: 0.1cm ;
-    background: #Ffffff;
-    color: #002300;
-}
-
 
 form{
     padding-left: 1cm;
@@ -105,24 +38,91 @@ button{
     box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
 }
 
-.clearbtn{
-    background-color: rgb(241, 3, 3);
-}
-
-.clearbtn:hover{
-    background-color: rgba(254, 0, 0, 0.345);
-}
-
-
 button:hover{
     background-color: #017201;
 }
-
 
 h2{
     text-align: center;
 }
 
+.title{
+    text-align: center;
+}
+
+/*  Navbar CSS
+*/
+
+.nav {
+    background-color:#002300;
+    overflow: hidden;
+}
+
+
+.navname {
+    color: aliceblue;
+    padding: 0;
+    justify-content:flex-end;
+    display: flex;
+}
+
+.Hausratsrechner{
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+.Home{
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+.logo{
+    margin-right: 14cm;
+}
+
+.nav-title{
+    color: #FCC201;
+    margin-top: 0cm;
+    margin-bottom: -0.3cm;
+}
+
+.nav-title:hover{
+    color: #fff3c9;
+}
+
+.home-btn{
+    height: 2.5cm;
+}
+
+/* Schadensrechner CSS
+*/
+ 
+.schadensrechner {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.zusammenfassung{
+    margin: 0.5cm;
+    padding-left: 1.5cm;
+    padding-right: 2cm;
+    padding-top: 0.25cm;
+    border: 0.1cm ;
+    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
+    border-radius: 0.5cm;
+    background: #Ffffff;
+    color: #002300;
+}
+
+.eingaben{
+    margin: 0.5cm;
+    margin-right: 2.5cm;
+    box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
+    border: 0.1cm ;
+    background: #Ffffff;
+    color: #002300;
+}
 
 .result{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -131,14 +131,28 @@ h2{
     padding: 0.3cm;
 }
 
+/* Clear button CSS
+*/
 
+.clearbtn{
+    background-color: rgb(241, 3, 3);
+}
+
+.clearbtn:hover{
+    background-color: rgba(254, 0, 0, 0.345);
+}
+
+/* Hausratsrechner CSS
+*/
 
 .Quadratmeter{
-    margin-left: 8.5cm;
+    display: flex;
+    margin: 0 auto;
 }
 
 .Basiswert{
-    margin-left: 8.5cm;
+    display: flex;
+    margin: 0 auto;
 }
 
 
@@ -151,7 +165,7 @@ h2{
     box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.5);
 }
 
-.form1{
+.form-basiswert{
     border: 0.07cm solid seagreen;
     margin-top: 1cm;
     margin-left: 5cm;
@@ -171,22 +185,17 @@ h2{
 }
 
 .btns-hausratsrechner{
-    margin-left: 8.5cm;
-    margin-bottom: 0.5cm;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.text{
+.result-hausratsrechner{
     text-align: center;
 }
 
-.homepart1{
-    background-image: url("https://c1.wallpaperflare.com/preview/553/386/425/fire-burning-house-flame.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    margin-top: -0.01cm;
-}
+/* Home CSS
+*/
 
 .home-question{
     color: #e1e2ef;
@@ -196,8 +205,5 @@ h2{
     color: #e1e2ef;
 }
 
-.home-btn{
-    height: 2.5cm;
-}
 
 
