@@ -7,7 +7,6 @@ function  Hausratsrechner(){
    const [Quadratmeter, setQuadratmeter] = useState("");
    const [Basiswert, setBasiswert] = useState("");
    const [Result, setResult] = useState("");
-   const [error, setError] = useState("");
    const [clearClick, setClearClick] = useState(false);
 
 
@@ -15,7 +14,6 @@ function  Hausratsrechner(){
         setQuadratmeter("");
         setBasiswert("");
         setResult("");
-        setError("");
         setClearClick(true);
    }
 
@@ -35,9 +33,7 @@ function  Hausratsrechner(){
         }if (Quadratmeter && Basiswert) {
           const calculate = Quadratmeter * Basiswert;
           setResult(parseInt(calculate).toFixed(2));
-          setError("");
         } else {
-          setError("Please fill in");
           window.alert("Please fill in");
         }
       };
@@ -47,13 +43,12 @@ function  Hausratsrechner(){
    
     
     return(
-        <div>
-            <header className="title">
+        <body className="background">
+            <div className="title">
                 <h1>
                     Hausratsrechner
                 </h1>
-            </header>
-            <body className="background">
+            </div>
                 <div>
                     <form className="inputForm" onSubmit={enterButton}>
                         <h2>Quadratmeter</h2>
@@ -74,9 +69,10 @@ function  Hausratsrechner(){
                     <form className="resultForm">
                         <h3 className="result-hausratsrechner">Hausratswert : {Result} CHF</h3>
                     </form>
+                    <br></br>
+                    <br></br>
                 </div>
-            </body>
-        </div>
+        </body>
     );
 }
 

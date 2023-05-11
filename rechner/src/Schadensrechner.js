@@ -11,7 +11,6 @@ function Schadensrechner() {
     const [result, setResult] = useState("");
     const [result1, setResult1] = useState("");
     const [result2, setResult2] = useState("");
-    const [error, setError] = useState("");
     const [clearClick, setClearClick] = useState(false);
 
 
@@ -22,7 +21,6 @@ function Schadensrechner() {
         setResult("");
         setResult1("");
         setResult2("");
-        setError("")
         setClearClick(true);
     }
 
@@ -49,16 +47,14 @@ function Schadensrechner() {
             setResult(parseInt(calculate).toFixed(2));
             setResult1(parseInt(Schaden - calculate).toFixed(2));
             setResult2(parseInt((calculate / Schaden) *100).toFixed(2) + "%");
-            setError("")
         }else{
-            setError("Please fill in")
            window.alert("Please fill in")
         }
     };
       
 
     return(
-        <div className="background">
+        <body className="background">
             <h1 className="title">
                 Schadensrechner
             </h1>
@@ -67,10 +63,8 @@ function Schadensrechner() {
                     <form onSubmit={enterButton} className="eingaben">  
                         <h2>Hauswert</h2>
                         <input type="number" value={Hauswert} onChange={change} />
-
                         <h2>Versicherungssumme</h2>
                         <input type="number" value={Versicherungssumme} onChange={change1} />
-
                         <h2>Schaden</h2>
                         <input type="number" value={Schaden} onChange={change2}  />
                         <br></br>
@@ -86,9 +80,11 @@ function Schadensrechner() {
                     <p className="result">Entschädigung : {result}</p>
                     <p className="result">Selbstbehalt : {result1}</p>
                     <p className="result">Prozentuale <br></br> Absicherung : {result2}</p>
+                    
                 </div>
             </div>
-        </div>
+            <br></br>
+        </body>
     );
 }
 

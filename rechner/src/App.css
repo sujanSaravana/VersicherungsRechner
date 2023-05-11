@@ -4,6 +4,7 @@
 .background{
     background: #c1ecd7;
     height: 100%;
+    min-height: 100%;
 }
 
 form{
@@ -50,6 +51,10 @@ h2{
     text-align: center;
 }
 
+body{
+    min-height: 100vh;
+}
+
 /*  Navbar CSS
 */
 
@@ -92,6 +97,43 @@ h2{
 
 .home-btn{
     height: 2.5cm;
+}
+
+footer{
+    background-color: #002300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: larger;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    margin: 0 1rem;
+}
+
+.footer-item{
+    color: #FCC201;
+    margin-top: -0.5cm;
+    margin-bottom: 5cm;
+    font-weight: 700;
+}
+
+.footer-item:hover{
+    color: #fff3c9;
+}
+
+.copyright{
+    color: #FCC201;
+    margin-top: -0.5cm;
+    font-weight: 700;
+    margin-left: 1cm;
 }
 
 /* Schadensrechner CSS
@@ -171,6 +213,7 @@ h2{
     margin-left: 5cm;
     margin-right: 5cm;
     background: #ffffff;
+    text-align: center;
     
 }
 
@@ -197,6 +240,10 @@ h2{
 /* Home CSS
 */
 
+.home{
+   min-height: 100%; 
+}
+
 .home-question{
     color: #e1e2ef;
 }
@@ -216,17 +263,9 @@ h2{
     margin-top: 1cm;
 }
 
-
-
-
-
-
-
 .card {
     align-items: center;
     position: relative;
-
-    /* Demo */
     height: 10cm;
     width: 12cm;
 }
@@ -234,55 +273,28 @@ h2{
 .card::before {
     background: #107d10;
     content: '';
-
-    /* Position */
     top: 1cm;
     left: 2cm;
     position: absolute;
     transform: translate(1rem, 1rem);
-
-    /* Size */
     height: 105%;
     width: 105%;
-
-    /* Display under the main content */
     z-index: 0;
 }
 
 .card-home {
-    /* Position */
     left: 2cm;
     position: absolute;
     top: 1cm;
-
-    /* Size */
     height: 100%;
     width: 100%;
-
     z-index: 1;
-
     background: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .card1 {
     align-items: center;
     position: relative;
-
-    /* Demo */
     height: 10cm;
     width: 12cm;
 }
@@ -290,35 +302,29 @@ h2{
 .card1::before {
     background: #107d10;
     content: '';
-
-    /* Position */
     top: -9cm;
     left: 18cm;
     position: absolute;
     transform: translate(1rem, 1rem);
-
-    /* Size */
     height: 105%;
     width: 105%;
-
-    /* Display under the main content */
     z-index: 0;
 }
 
 .card-home1 {
-    /* Position */
     left: 18cm;
     position: absolute;
     top: -9cm;
-
-    /* Size */
     height: 100%;
     width: 100%;
-
     z-index: 1;
-
     background: #fff;
 }
+
+
+
+
+
 
 
 
