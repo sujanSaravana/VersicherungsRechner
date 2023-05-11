@@ -10,7 +10,7 @@
     - CSS
 
 - Versicherungsrechner
-    - auf Docker 
+    - auf Docker deployen
     - grafik mit Docker
 
 ## DOING 
@@ -22,7 +22,6 @@
 - Navbar 
 
 - Home 
-    - Wilkommen
 
 
 ## DONE
@@ -59,3 +58,4 @@
     - background
     - cards formatiert
     - Erklärung : Hausratsrechner & Schadensrechner 
+    - Wilkommen
