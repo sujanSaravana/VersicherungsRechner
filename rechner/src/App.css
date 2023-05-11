@@ -205,5 +205,120 @@ h2{
     color: #e1e2ef;
 }
 
+.home-text{
+    padding-left: 0.75cm;
+    padding-right: 0.75cm;
+    font-size: large;
+}
+
+.home-title{
+    text-align: center;
+    margin-top: 1cm;
+}
+
+
+
+
+
+
+
+.card {
+    align-items: center;
+    position: relative;
+
+    /* Demo */
+    height: 10cm;
+    width: 12cm;
+}
+
+.card::before {
+    background: #107d10;
+    content: '';
+
+    /* Position */
+    top: 0cm;
+    left: 0cm;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 105%;
+    width: 105%;
+
+    /* Display under the main content */
+    z-index: 0;
+}
+
+.card-home {
+    /* Position */
+    left: 0cm;
+    position: absolute;
+    top: 0cm;
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card1 {
+    align-items: center;
+    position: relative;
+
+    /* Demo */
+    height: 10cm;
+    width: 12cm;
+}
+
+.card1::before {
+    background: #107d10;
+    content: '';
+
+    /* Position */
+    top: 2cm;
+    left: 18cm;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 105%;
+    width: 105%;
+
+    /* Display under the main content */
+    z-index: 0;
+}
+
+.card-home1 {
+    /* Position */
+    left: 18cm;
+    position: absolute;
+    top: 2cm;
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+
+    background: #fff;
+}
+
 
 
