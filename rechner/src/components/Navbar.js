@@ -12,7 +12,7 @@ function Navbar(){
             <ul className='navname'>
 
                 <h1 className="logo">
-                  LOGO
+                  Sujan Saravana
                 </h1>
 
                 <h1 className='Home'>

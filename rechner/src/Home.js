@@ -1,10 +1,16 @@
 import React from "react";
 import { useState } from "react";
+import Carousel from 'react-bootstrap/Carousel';
 import './App.css';
 
 function Home() {
+
+    
     return(
         <div className="home">
+
+
+
             <div class="card">
                 <div class="card-home">
                     <h2 className="home-title">Was ist eine Hausratsversicherung?</h2>

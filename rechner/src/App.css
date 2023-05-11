@@ -3,7 +3,7 @@
 
 .background{
     background: #c1ecd7;
-    height: 100vh;
+    height: 100%;
 }
 
 form{
@@ -77,7 +77,7 @@ h2{
 }
 
 .logo{
-    margin-right: 14cm;
+    margin-right: 12cm;
 }
 
 .nav-title{
@@ -236,8 +236,8 @@ h2{
     content: '';
 
     /* Position */
-    top: 0cm;
-    left: 0cm;
+    top: 1cm;
+    left: 2cm;
     position: absolute;
     transform: translate(1rem, 1rem);
 
@@ -251,9 +251,9 @@ h2{
 
 .card-home {
     /* Position */
-    left: 0cm;
+    left: 2cm;
     position: absolute;
-    top: 0cm;
+    top: 1cm;
 
     /* Size */
     height: 100%;
@@ -292,7 +292,7 @@ h2{
     content: '';
 
     /* Position */
-    top: 2cm;
+    top: -9cm;
     left: 18cm;
     position: absolute;
     transform: translate(1rem, 1rem);
@@ -309,7 +309,7 @@ h2{
     /* Position */
     left: 18cm;
     position: absolute;
-    top: 2cm;
+    top: -9cm;
 
     /* Size */
     height: 100%;
@@ -319,6 +319,8 @@ h2{
 
     background: #fff;
 }
+
+
 
 
 
