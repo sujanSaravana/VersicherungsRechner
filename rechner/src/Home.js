@@ -8,6 +8,15 @@ function Home() {
     return(
         <body className="home">
 
+        <div className="home-div">
+
+            <div className="card-top">
+                <div className="card-home-top">
+                    <h1 className="home-title"> Wilkommen</h1>
+                    <p className="home-text-top">Dieser Versicherungsrechner wurde von Sujan Saravana erstellt.</p>
+                </div>
+            </div>
+
 
 
             <div className="card">
@@ -25,6 +34,7 @@ function Home() {
                     <h2 className="home-title">Was ist ein Schadensrechner?</h2>
                     <p className="home-text">Ein Schadensrechner ist ein Tool, um den potenziellen finanziellen Schaden zu berechnen, der durch verschiedene Arten von Schäden an Ihrem Eigentum entstehen könnte. Indem Sie bestimmte Informationen zu Ihrem Eigentum und Ihrem Versicherungsbedarf eingeben, kann ein Schadensrechner eine Schätzung des potenziellen Schadens liefern und Ihnen helfen, eine Vorstellung davon zu bekommen.</p>
                 </div>
+            </div>
             </div>
         </body>
     );
