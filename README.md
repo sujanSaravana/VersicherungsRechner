@@ -1,6 +1,7 @@
 
-# Versicherungsrechner
+# Schulprojekt Versicherungsrechner
 
+Dieser Projekt wurde in der BBW in zwei Monaten erstellt.
 Dies ist eine React-App, die den Benutzern ermöglicht, den Betrag der Entschädigun, Slebstbehaltes und des Versicherungswertes zu berechnen. 
 
 
@@ -64,9 +65,17 @@ Der Hausratsrechner ist in zwei Teilen aufgeteilt, nämlich der Rechner selber u
 ## Komponenten
 ### Clear button
 
+Der Clear Button ist eine wiederverwendbare React-Komponente, die einen Button zum Löschen von Daten oder Eingaben bereitstellt. Um die Komponente zu verwenden, kann sie einfach in das React-Projekt eingefügt werden und die Funktion für das Löschen angegeben werden.
 
 ### Navbar
 
+Dieses React-Komponenten enthält eine Navbar und ein Footer mit drei Links zu verschiedenen Seiten. Die Links sind mit React Router implementiert und ermöglichen eine nahtlose Navigation zwischen den Seiten.
+
+## Persönliche Auswertung
+
+Der Versicherungsrechner-Code ist eine Implementierung einer React-Application, die zwei Rechner enthält: Schadensrechner und Hausratsrechner. Der Code nutzt React Router, um die Navigation zwischen diesen Rechnern zu ermöglichen. Die Schadensrechner- und Hausratsrechner-Komponenten enthalten jeweils Formulare, die die Eingabe von Informationen ermöglichen. 
+
+Während dieser Projekt habe ich viele verschiedene Schwierigkeiten begegnet. Einer dieser Schwierigkeit für mich war es das die Aufgabenstellung,am Anfang, nicht sehr klar. war. Deswegen dauert es eine Weile bis ich die Aufgabe verstah, nämlich während dem gestalten des Keyscreens, bekam ich eine bessere Idee von der Aufgabe. Bei der erstellung der Projektes fiel mir auch schwer die verschiedenen Funktionen zu erstellen und mit CSS habe ich eine lange Zeit verbracht.Aber schlussendlich kann man sagen das dies eine nutzliche Aufgabe war, denn während dieser Projekt habe ich sehr viele neues gelernt.
 
 ## Autor
 
