@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>198</x>
+      <y>207</y>
+      <w>225</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Webapp</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>117</x>
+      <y>162</y>
+      <w>387</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>Docker Host</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>621</x>
+      <y>261</y>
+      <w>144</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>React
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLDeployment</id>
+    <coordinates>
+      <x>576</x>
+      <y>216</y>
+      <w>225</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Client Browser</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>405</x>
+      <y>261</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>http:3000
+</panel_attributes>
+    <additional_attributes>10.0;30.0;190.0;20.0</additional_attributes>
+  </element>
+</diagram>
