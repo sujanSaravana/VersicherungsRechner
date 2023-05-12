@@ -9,13 +9,16 @@
     - CSS
 
 - Versicherungsrechner
+
+
+
+## DOING 
+
+- Versicherungsrechner
     - auf Docker deployen
     - grafik mit Docker
     - dockerfile
     - .gitignore file
-    
-
-## DOING 
 
 - Schadensrechner 
 
@@ -27,6 +30,9 @@
 
 
 ## DONE
+
+- Versicherungsrechner
+    - Quellen 
 
 - Schadensrechner
     - froms
