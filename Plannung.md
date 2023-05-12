@@ -1,10 +1,9 @@
 ## TO DO ()
 
 - Hausratsrechner
-    - clean code
     
 - Schadensrechner
-    - clean code
+    - footer soll unten kleben
 
 - Home 
     - CSS
@@ -12,6 +11,9 @@
 - Versicherungsrechner
     - auf Docker deployen
     - grafik mit Docker
+    - dockerfile
+    - .gitignore file
+    
 
 ## DOING 
 
