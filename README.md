@@ -77,8 +77,6 @@ Der Versicherungsrechner-Code ist eine Implementierung einer React-Application, 
 
 Während dieser Projekt habe ich viele verschiedene Schwierigkeiten begegnet. Einer dieser Schwierigkeit für mich war es das die Aufgabenstellung,am Anfang, nicht sehr klar. war. Deswegen dauert es eine Weile bis ich die Aufgabe verstah, nämlich während dem gestalten des Keyscreens, bekam ich eine bessere Idee von der Aufgabe. Bei der erstellung der Projektes fiel mir auch schwer die verschiedenen Funktionen zu erstellen und mit CSS habe ich eine lange Zeit verbracht.Aber schlussendlich kann man sagen das dies eine nutzliche Aufgabe war, denn während dieser Projekt habe ich sehr viele neues gelernt.
 
-Mir 
-
 ## Autor
 
 - Sujan Saravana
