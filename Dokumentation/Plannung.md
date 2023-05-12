@@ -3,10 +3,10 @@
 - Hausratsrechner
     
 - Schadensrechner
-    - footer soll unten kleben
+    
 
 - Home 
-    - CSS
+   
 
 - Versicherungsrechner
 
@@ -15,10 +15,6 @@
 ## DOING 
 
 - Versicherungsrechner
-    - auf Docker deployen
-    - grafik mit Docker
-    - dockerfile
-    - .gitignore file
 
 - Schadensrechner 
 
@@ -33,6 +29,10 @@
 
 - Versicherungsrechner
     - Quellen 
+    - auf Docker deployen
+    - grafik mit Docker
+    - dockerfile
+    - .gitignore file
 
 - Schadensrechner
     - froms
@@ -44,6 +44,7 @@
     - prozentuale zu "prozentuale Absicherung" ändern
     - Error function
     - clear btn ohne error alert
+    - footer soll unten kleben
 
 - Hausratsrechner
     - forms
