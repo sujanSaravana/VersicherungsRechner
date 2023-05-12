@@ -56,7 +56,7 @@ function  Hausratsrechner(){
                         <h2>Basiswert</h2>
                         <input type="number" value={Basiswert} onChange={change1} className="Basiswert"/>
                             <form className="form-basiswert">
-                                <h3 className="text">Vorgeschlagene Basiswert : 200</h3>
+                                <h3 className="text">Vorgeschlagene Basiswert : 200 CHF</h3>
                             </form>
                         <br></br>
                         <div className="btns-hausratsrechner">
@@ -67,7 +67,7 @@ function  Hausratsrechner(){
                 </div>
                 <div>
                     <form className="resultForm">
-                        <h3 className="result-hausratsrechner">Hausratswert : {Result} CHF</h3>
+                        <h3 className="result-hausratsrechner">Versicherungswert : {Result} CHF</h3>
                     </form>
                     <br></br>
                     <br></br>
