@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import Bar from "./components/Navbar";
 
 
 function Home() {
@@ -7,7 +8,7 @@ function Home() {
 
     return(
         <body className="home">
-
+            <Bar />
         <div className="home-div">
 
             <div className="card-top">

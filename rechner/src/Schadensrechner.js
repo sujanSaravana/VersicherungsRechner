@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import './App.css';
 import ClearBtn from "./components/ClearBtn";
+import Bar from "./components/Navbar"
 
 function Schadensrechner() {
 
@@ -54,7 +55,8 @@ function Schadensrechner() {
       
 
     return(
-        <body className="background">
+        <div className="background">
+            <Bar />
             <h1 className="title">
                 Schadensrechner
             </h1>
@@ -84,7 +86,7 @@ function Schadensrechner() {
                 </div>
             </div>
             <br></br>
-        </body>
+        </div>
     );
 }
 

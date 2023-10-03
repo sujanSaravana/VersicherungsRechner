@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import ClearBtn from "./components/ClearBtn";
+import Bar from "./components/Navbar"
 
 function  Hausratsrechner(){
     
@@ -43,7 +44,8 @@ function  Hausratsrechner(){
    
     
     return(
-        <body className="background">
+        <div className="background">
+            <Bar />
             <div className="title">
                 <h1>
                     Hausratsrechner
@@ -72,7 +74,7 @@ function  Hausratsrechner(){
                     <br></br>
                     <br></br>
                 </div>
-        </body>
+        </div>
     );
 }
 

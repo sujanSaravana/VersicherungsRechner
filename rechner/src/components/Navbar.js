@@ -1,13 +1,10 @@
-import {Link, BrowserRouter, Route, Routes} from "react-router-dom";
-import Schadensrechner from "../Schadensrechner";
-import Hausratsrechner from "../Hausratsrechner";
-import Home from "../Home";
+import {Link } from "react-router-dom";
 import React from "react";
 
 function Navbar(){
     return(
       
-        <BrowserRouter>
+        <div>
         <header>
         <div className="background">
           <nav className="nav">
@@ -32,24 +29,9 @@ function Navbar(){
               
             </ul>
           </nav>
-          
-        
-          <Routes>
-            <Route path="/Schadensrechner" element={<Schadensrechner />} />
-            <Route path="/Hausratsrechner" element={<Hausratsrechner />} />
-            <Route path="/Home" element={<Home />} />
-          </Routes>
         </div>
         </header>
-        <footer className="footer">
-        <ul>
-            <li><Link to="/Home" className="footer-item"><p>Home</p></Link></li>
-            <li><Link to="/Schadensrechner" className="footer-item"><p>Schadensrechner</p></Link></li>
-            <li ><Link to="/Hausratsrechner" className="footer-item"><p>Hausratsrechner</p></Link></li>
-        </ul>
-            <p className="copyright">© 2023 My Company. All rights reserved.</p>
-        </footer>
-      </BrowserRouter>
+      </div>
     );
 }
 
